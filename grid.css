@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 100%;
+}
+
+.row::before,
+.row::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.one {
+    width: 100%;
+    background-color: red;
+}
+.half {
+    width: calc(100% / 2);
+    background-color: orange;
+}
+.one-third {
+    width: calc(100% / 3);
+    background-color: yellow;
+}
+.one-fourth {
+    width: calc(100% / 4);
+    background-color: green;
+}
+.two-thirds {
+    width: calc(100% / 3 * 2);
+    background-color: blue;
+}
+.column {
+    float: left;
+
+}
